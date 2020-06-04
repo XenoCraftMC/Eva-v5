@@ -1,0 +1,21 @@
+{
+  "install": {
+    "include": [
+      "^package\\.json$",
+      "^\\.env$",
+      "^\\.trigger-rebuild"
+    ]
+  },
+  "restart": {
+    "exclude": [
+      "^public/",
+      "^dist/",
+      "\\.js$"
+
+    ],
+    "include": [
+      "\\.json"
+    ]
+  },
+  "throttle": 15
+}
